@@ -119,7 +119,7 @@ head(NKT.markers, n = 12)
 NKT.markers <- FindMarkers(pbmc, ident.1 = "Natural Killer T Cell", min.pct = 0.25)
 head(NKT.markers, n = 1000)
 
-write.table(NKT.markers,file="c")
+write.table(NKT.markers,file="NKT.markers")
 
 FeaturePlot(pbmc, features = c("CD52","CD96","CDC25B", "EEF2",  
                                "HLA-A", "HLA-B", "HLA-DRA", "HLA-DRB1", "HLA-DRB5","IL32",
